@@ -1,4 +1,4 @@
-# Install Redis server and client in Google Colab
+```
 !apt-get install redis-server
 !redis-server --daemonize yes
 !pip install redis
@@ -63,3 +63,4 @@ if __name__ == "__main__":
     # Fetch the second post again to demonstrate caching
     cached_post_2 = blog_cache.get_post(post_id_2)
     print(f"Cached Post: {cached_post_2}")
+```
